@@ -1,0 +1,33 @@
+.pokemonBig {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+
+  img {
+    width: 400px;
+    height: 400px;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+
+  .types {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+    a {
+      font-size: 30px;
+      text-transform: capitalize;
+    }
+  }
+}

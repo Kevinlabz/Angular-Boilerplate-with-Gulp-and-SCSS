@@ -1,0 +1,48 @@
+.types {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  h2 {
+    font-size: 50px;
+    margin: 20px;
+    text-transform: capitalize;
+  }
+
+  .holder {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .column {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 73vh;
+
+        li {
+          margin-right: 40px;
+          font-size: 17px;
+        }
+        li:hover {
+          color: rgb(198, 36, 36);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

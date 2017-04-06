@@ -1,0 +1,11 @@
+<div class="pokemonBig">
+    <img ng-src="{{pokemon.sprites.front_default}}" alt="">
+    <h2>{{pokemon.name}}</h2>
+    <div class="types">
+      <h3 class="types" ng-repeat="type in pokemon.types">
+        <a ui-sref="type ({types: type.type.name})">{{type.type.name}}</a>
+      </h3>
+    </div>
+    <h4>Height: {{pokemon.height}}</h4>
+    <h4>Weight: {{pokemon.weight}}</h4>
+</div>

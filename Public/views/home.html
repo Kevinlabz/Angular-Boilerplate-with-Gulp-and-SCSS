@@ -1,1 +1,13 @@
-{{test}}
+<section class="pokemonRepeater">
+  <div class="pokemon" ng-repeat="pokemon in pokemonList">
+    <a ui-sref="pokemon ({id: {{pokemon.id}}})">
+    <img ng-src="{{pokemon.sprites.front_default}}" alt="">
+    <h2>{{pokemon.name}}</h2>
+    </a>
+    <div class="types">
+      <h3 class="types" ng-repeat="type in pokemon.types" ui-sref="type ({types: type.type.name})">
+          <a>{{type.type.name}}</a>
+      </h3>
+    </div>
+  </div>
+</section>

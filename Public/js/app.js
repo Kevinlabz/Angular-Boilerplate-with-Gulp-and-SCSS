@@ -1,4 +1,4 @@
-angular.module("App", ['ui.router'])
+angular.module("poke", ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider) {
 
       $urlRouterProvider.otherwise('/');
@@ -9,9 +9,14 @@ angular.module("App", ['ui.router'])
                controller: 'homeCtrl',
                url: '/'
            })
-           .state('about', {
-               templateUrl: '../views/about.html',
-               controller: 'aboutCtrl',
-               url: '/about'
+           .state('pokemon', {
+               templateUrl: '../views/pokemon.html',
+               controller: 'pokemonCtrl',
+               url: '/pokemon/:id'
+           })
+           .state('type', {
+               templateUrl: '../views/types.html',
+               controller: 'typeCtrl',
+               url: '/type/:types'
            });
  });
